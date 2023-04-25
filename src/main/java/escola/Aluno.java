@@ -10,10 +10,10 @@ public class Aluno {
 	private Email email;
 	private List<Telefone> telefones = new ArrayList<>();
 
-	public Aluno(String cpf, String nome, String email) {
-		this.cpf = new Cpf(cpf);
+	public Aluno(Cpf cpf, String nome, Email email) {
+		this.cpf = cpf;
 		this.nome = nome;
-		this.email = new Email(email);
+		this.email = email;
 	}
 
 	public void adicionaTelefone(String ddd, String numero) {
