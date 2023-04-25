@@ -9,7 +9,7 @@ public class Cpf {
 		String cpfEmValidacao = cpfNaoValidado;
 		cpfEmValidacao = cpfEmValidacao.replace(".", "").replace("-", "");
 		if (validaCpf(cpfEmValidacao))
-			this.cpfValidado = cpfNaoValidado;
+			this.cpfValidado = cpfEmValidacao;
 	}
 
 	public String getCpfValue() {
