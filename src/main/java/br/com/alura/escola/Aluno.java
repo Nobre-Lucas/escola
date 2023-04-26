@@ -1,4 +1,4 @@
-package escola;
+package br.com.alura.escola;
 
 import java.util.ArrayList;
 import java.util.List;

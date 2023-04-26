@@ -1,4 +1,4 @@
-package escola;
+package br.com.alura.escola;
 
 import java.time.LocalDateTime;
 
