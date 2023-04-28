@@ -13,7 +13,7 @@ public class RepositorioDeAlunosEmMemoria implements RepositorioDeAlunos {
 	private List<Aluno> matriculados = new ArrayList<>();
 
 	@Override
-	public void matricular(Aluno aluno) {
+	public void matricula(Aluno aluno) {
 		this.matriculados.add(aluno);
 	}
 

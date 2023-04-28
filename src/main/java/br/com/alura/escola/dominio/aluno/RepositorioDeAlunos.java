@@ -4,7 +4,7 @@ import java.util.List;
 
 public interface RepositorioDeAlunos {
 
-	void matricular(Aluno aluno);
+	void matricula(Aluno aluno);
 
 	Aluno buscarPorCPF(Cpf cpf);
 

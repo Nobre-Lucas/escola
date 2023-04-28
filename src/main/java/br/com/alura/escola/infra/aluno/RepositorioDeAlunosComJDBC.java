@@ -19,7 +19,7 @@ public class RepositorioDeAlunosComJDBC implements RepositorioDeAlunos {
 	}
 
 	@Override
-	public void matricular(Aluno aluno) {
+	public void matricula(Aluno aluno) {
 		String sqlQuery = "INSERT INTO ALUNO VALUES(?, ?, ?)";
 		try {
 			PreparedStatement prepareStatement = connection.prepareStatement(sqlQuery);
