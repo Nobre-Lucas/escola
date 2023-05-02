@@ -3,6 +3,7 @@ package br.com.alura.escola.dominio.aluno;
 import java.util.ArrayList;
 import java.util.List;
 
+import br.com.alura.escola.dominio.aluno.exceptions.NumeroMaximoDeTelefonesException;
 import br.com.alura.escola.infra.aluno.CifradorDeSenhaComMD5;
 
 public class Aluno {
@@ -13,6 +14,8 @@ public class Aluno {
 	private List<Telefone> telefones = new ArrayList<>();
 	private String senha;
 
+	private int numeroMaximoDeTelefones = 2;
+
 	public Aluno(Cpf cpf, String nome, Email email) {
 		this.cpf = cpf;
 		this.nome = nome;
@@ -20,6 +23,9 @@ public class Aluno {
 	}
 
 	public void adicionaTelefone(String ddd, String numero) {
+		if (this.telefones.size() == this.numeroMaximoDeTelefones) {
+			throw new NumeroMaximoDeTelefonesException(this.numeroMaximoDeTelefones);
+		}
 		this.telefones.add(new Telefone(ddd, numero));
 	}
 
@@ -46,6 +52,10 @@ public class Aluno {
 
 	public String getSenha() {
 		return senha;
+	}
+
+	public int getNumeroMaximoDeTelefones() {
+		return this.numeroMaximoDeTelefones;
 	}
 
 }
