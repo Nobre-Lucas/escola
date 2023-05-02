@@ -3,6 +3,8 @@ package br.com.alura.escola.dominio.aluno;
 import java.util.ArrayList;
 import java.util.List;
 
+import br.com.alura.escola.infra.aluno.CifradorDeSenhaComMD5;
+
 public class Aluno {
 
 	private Cpf cpf;
@@ -35,6 +37,15 @@ public class Aluno {
 
 	public List<Telefone> getTelefones() {
 		return telefones;
+	}
+
+	public void setSenha(String senha) {
+		CifradorDeSenha cifrador = new CifradorDeSenhaComMD5();
+		this.senha = cifrador.cifrarSenha(senha);
+	}
+
+	public String getSenha() {
+		return senha;
 	}
 
 }
