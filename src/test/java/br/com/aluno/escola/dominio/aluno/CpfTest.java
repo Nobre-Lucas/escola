@@ -17,7 +17,7 @@ class CpfTest {
 	@Test
 	void deveCriarCpfValido() {
 		Cpf cpf = new Cpf("327.527.275-69");
-		assertEquals(cpf.getCpfValue(), "32752727569");
+		assertEquals(cpf.toString(), "32752727569");
 	}
 
 }

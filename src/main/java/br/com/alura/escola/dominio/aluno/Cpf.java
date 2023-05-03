@@ -12,10 +12,6 @@ public class Cpf {
 			this.cpfValidado = cpfEmValidacao;
 	}
 
-	public String getCpfValue() {
-		return cpfValidado;
-	}
-
 	private boolean validaCpf(String cpf) {
 		int soma, resto, digito1, digito2;
 
@@ -44,6 +40,11 @@ public class Cpf {
 		}
 
 		return true;
+	}
+
+	@Override
+	public String toString() {
+		return this.cpfValidado;
 	}
 
 }
