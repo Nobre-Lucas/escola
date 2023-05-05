@@ -4,11 +4,13 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
 
-import br.com.alura.escola.dominio.PublicadorDeEventos;
-import br.com.alura.escola.dominio.aluno.Aluno;
-import br.com.alura.escola.dominio.aluno.Cpf;
-import br.com.alura.escola.dominio.aluno.LogDeAlunoMatriculado;
-import br.com.alura.escola.infra.aluno.RepositorioDeAlunosEmMemoria;
+import br.com.alura.escola.academico.aplicacao.aluno.matricular.MatricularAluno;
+import br.com.alura.escola.academico.aplicacao.aluno.matricular.MatricularAlunoDto;
+import br.com.alura.escola.academico.dominio.aluno.Aluno;
+import br.com.alura.escola.academico.dominio.aluno.LogDeAlunoMatriculado;
+import br.com.alura.escola.academico.infra.aluno.RepositorioDeAlunosEmMemoria;
+import br.com.alura.escola.shared.dominio.Cpf;
+import br.com.alura.escola.shared.dominio.evento.PublicadorDeEventos;
 
 class MatricularAlunoTest {
 

@@ -4,8 +4,9 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
 
-import br.com.alura.escola.aplicacao.aluno.matricular.MatricularAlunoDto;
-import br.com.alura.escola.dominio.aluno.exceptions.NumeroMaximoDeTelefonesException;
+import br.com.alura.escola.academico.aplicacao.aluno.matricular.MatricularAlunoDto;
+import br.com.alura.escola.academico.dominio.aluno.Aluno;
+import br.com.alura.escola.academico.dominio.aluno.exceptions.NumeroMaximoDeTelefonesException;
 
 class AlunoTest {
 
